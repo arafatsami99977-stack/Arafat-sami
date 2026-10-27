@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Novara Wealth Advisory – Your Goals. A Brighter Tomorrow.</title>
+<meta name="description" content="Personalized financial advice to help you build wealth, protect what matters, and live the life you envision.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero" id="home">
+  <svg class="mountain" viewBox="0 0 800 400" preserveAspectRatio="xMaxYMax slice" aria-hidden="true">
+    <defs><linearGradient id="m1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8f4fb"/><stop offset=".35" stop-color="#7fa6c0"/><stop offset="1" stop-color="#0b2a40"/></linearGradient></defs>
+    <path d="M170 400 L430 120 L470 160 L510 105 L560 170 L640 130 L800 270 L800 400Z" fill="url(#m1)" opacity=".9"/>
+    <path d="M0 400 L0 360 L220 300 L420 340 L800 290 L800 400Z" fill="#071d2e"/>
+  </svg>
+
+  <nav class="nav">
+    <a href="#home" class="logo" aria-label="Novara Wealth Advisory">
+      <svg width="34" height="30" viewBox="0 0 34 30"><path d="M17 0 L34 30 H0Z" fill="#8ff0dc"/><path d="M17 12 L25 26 H9Z" fill="#0b2a40"/></svg>
+      <span><b>Novara</b><small>Wealth Advisory</small></span>
+    </a>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-mint nav-cta">Book a Call <span>→</span></a>
+  </nav>
+
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="tagline">Clarity today. A brighter tomorrow.</p>
+      <h1>Your Goals.<br><em>A Brighter Tomorrow.</em></h1>
+      <p class="lead">Personalized financial advice to help you build wealth, protect what matters, and live the life you envision.</p>
+      <div class="actions">
+        <a href="#contact" class="btn btn-mint">Book a Consultation <span>→</span></a>
+        <button class="btn btn-ghost" id="watchBtn"><i>▶</i> Watch Video</button>
+      </div>
+      <ul class="trust">
+        <li><svg viewBox="0 0 24 24"><path d="M4 20V13M10 20V8M16 20V4"/></svg>Trusted<br>Expertise</li>
+        <li><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Client-First<br>Approach</li>
+        <li><svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M2 20c0-4 3-6 6-6s6 2 6 6M15 15c3 0 6 1.5 6 5"/></svg>Long-Term<br>Partnerships</li>
+      </ul>
+    </div>
+
+    <aside class="portfolio glass" aria-label="Sample portfolio overview">
+      <div class="p-head">
+        <div>
+          <small>Total Portfolio Value</small>
+          <strong id="pValue">$482,230</strong>
+          <span class="up" id="pChange">↑ 12.4%</span> <small id="pSub">vs. last quarter</small>
+        </div>
+        <select id="range" aria-label="Time range">
+          <option value="12">Last 12 Months</option>
+          <option value="6">Last 6 Months</option>
+          <option value="3">Last 3 Months</option>
+        </select>
+      </div>
+      <div class="chart-wrap">
+        <svg id="chart" viewBox="0 0 440 150" preserveAspectRatio="none" role="img" aria-label="Portfolio growth chart"></svg>
+        <div class="tip" id="tip"></div>
+      </div>
+      <div class="months" id="months"></div>
+      <div class="mini">
+        <div class="glass"><svg viewBox="0 0 24 24"><path d="M3 18l5-6 4 3 8-10"/></svg><small>Wealth Growth</small><b id="mGrowth">+12.4%</b></div>
+        <div class="glass"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v9h9"/></svg><small>Diversification</small><b>Balanced</b></div>
+        <div class="glass"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg><small>Risk Level</small><b>Moderate</b></div>
+      </div>
+    </aside>
+  </div>
+  <p class="script">Progress<br>with Purpose.</p>
+</header>
+
+<main>
+  <section class="services" id="services">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Our Services</p>
+        <h2>Financial Guidance for<br>Every Stage of Life.</h2>
+      </div>
+      <p class="sec-text">From growing your wealth to planning your legacy, we offer comprehensive financial solutions tailored to your unique goals.</p>
+      <a href="#services" class="btn btn-outline">View All Services <span>→</span></a>
+    </div>
+    <div class="cards">
+      <a href="#contact" class="card"><svg viewBox="0 0 24 24"><path d="M12 21v-9M12 12c0-4-3-6-7-6 0 4 3 6 7 6zM12 14c0-3 2-5 6-5 0 3-2 5-6 5z"/></svg><h3>Investment Planning</h3><p>Build and grow your wealth with confidence.</p><span class="go">→</span></a>
+      <a href="#contact" class="card"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v9h9"/></svg><h3>Retirement Planning</h3><p>Create the future you deserve.</p><span class="go">→</span></a>
+      <a href="#contact" class="card"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><h3>Wealth Protection</h3><p>Safeguard what matters most.</p><span class="go">→</span></a>
+      <a href="#contact" class="card"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg><h3>Estate Planning</h3><p>Plan today for generations tomorrow.</p><span class="go">→</span></a>
+      <a href="#contact" class="card"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20c0-4 3-6 6-6s6 2 6 6M15 15c3 0 6 1.5 6 5"/></svg><h3>Business Advisory</h3><p>Strategic financial support for business owners.</p><span class="go">→</span></a>
+    </div>
+  </section>
+
+  <section class="split" id="about">
+    <div class="partner">
+      <svg class="p-scene" viewBox="0 0 600 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#143a55"/><stop offset=".6" stop-color="#f3b98a"/><stop offset="1" stop-color="#f7d9b8"/></linearGradient></defs>
+        <rect width="600" height="300" fill="url(#sky)"/>
+        <path d="M0 220 L120 130 L200 190 L330 90 L460 200 L600 140 V300H0Z" fill="#46657d" opacity=".85"/>
+        <path d="M0 250 L150 200 L300 240 L450 195 L600 240 V300H0Z" fill="#1f4258"/>
+        <path d="M330 300 L350 235 L400 220 L450 235 L470 300Z" fill="#12293a"/>
+        <circle cx="400" cy="190" r="8" fill="#0b1c2a"/><path d="M393 198h14l3 32h-20z" fill="#0b1c2a"/>
+      </svg>
+      <div class="p-copy">
+        <p class="eyebrow">More than financial advice</p>
+        <h2>A Partner in<br>What's Next.</h2>
+        <p>We take the time to understand your dreams and create a clear, personalized plan to help you achieve them.</p>
+        <a href="#contact" class="btn btn-mint">Book a Call <span>→</span></a>
+      </div>
+      <p class="tag-r">Same<br>Higher<br>Further</p>
+    </div>
+
+    <figure class="quote" id="slider" aria-live="polite">
+      <span class="qm">“</span>
+      <blockquote id="qText"></blockquote>
+      <figcaption id="qName"></figcaption>
+      <div class="q-ctrl">
+        <button id="prev" aria-label="Previous testimonial">←</button>
+        <div class="dots" id="dots"></div>
+        <button id="next" aria-label="Next testimonial">→</button>
+      </div>
+    </figure>
+  </section>
+
+  <section class="stats" id="resources">
+    <div><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20c0-4 3-6 6-6s6 2 6 6M15 15c3 0 6 1.5 6 5"/></svg><p><b data-count="1200" data-suffix="+">0</b><span>Happy Clients</span></p></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><p><b data-count="4.9" data-suffix="/5" data-dec="1">0</b><span>Client Rating</span></p></div>
+    <div><svg viewBox="0 0 24 24"><path d="M5 20v-8M12 20V5M19 20v-12"/></svg><p><b data-count="750" data-prefix="$" data-suffix="M+">0</b><span>Assets Managed</span></p></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><p><b data-count="15" data-suffix="+">0</b><span>Years of Experience</span></p></div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="f-top">
+    <a href="#home" class="logo dark">
+      <svg width="30" height="26" viewBox="0 0 34 30"><path d="M17 0 L34 30 H0Z" fill="#0b2a40"/><path d="M17 12 L25 26 H9Z" fill="#e9f5f8"/></svg>
+      <span><b>Novara</b><small>Wealth Advisory</small></span>
+    </a>
+    <ul class="f-links">
+      <li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#resources">Resources</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="social">
+      <a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a>
+    </div>
+    <p class="f-tag">A brighter<br>tomorrow together.</p>
+  </div>
+  <div class="f-bot">
+    <span>© <span id="year">2024</span> Novara Wealth Advisory. All rights reserved.</span>
+    <span><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Sitemap</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
